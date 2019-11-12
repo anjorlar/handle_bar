@@ -47,8 +47,15 @@ app.get('/', (req, res) => {
     res.render('home.hbs', {
         pageTitle: 'WELCOME TO THE HOMEPAGE',
         content: `20`
-    })
-})
+    });
+});
+
+app.get('/project', (req, res) => {
+    res.render('project.hbs', {
+        pageTitle: `This is the project page`,
+        content: `39`
+    });
+});
 
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
